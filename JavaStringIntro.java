@@ -12,11 +12,13 @@ public class JavaStringIntro {
         
         System.out.println(A.length() + B.length());
         
-        if(A.compareTo(B) == 0){
+        if(A.compareTo(B) > 0){
             System.out.println("Yes");
-            
-        }else{
+        }
+        else if(A.compareTo(B) < 0){
             System.out.println("No");
+        }else if(A.compareTo(B) == 0){
+            System.out.println("No"); 
         }
         
         String capA = Character.toUpperCase(A.charAt(0)) + A.substring(1);
